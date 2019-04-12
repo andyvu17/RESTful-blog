@@ -1,0 +1,15 @@
+.header.item {
+    font-size: 1.25em;
+}
+
+.container.main {
+    margin-top: 7.0rem;
+}
+
+img {
+    width: 100%;
+}
+
+.blogCard, .ui .buttons{
+    margin-top: 1rem;
+}

@@ -1,0 +1,18 @@
+<% include ./partials/header %>
+
+<div class=" ui main text container">
+    <h1>Index Page</h1>
+
+    <% blogs.forEach((blog) =>{ %>
+        <div class="blogCard ui segment">
+            <h2><%= blog.title %></h2>
+            <img src="<%= blog.image %>">
+            <span>Date Posted: <%= blog.created %></span>
+            <p><%= blog.body.substring(0, 197) %>...</p>
+            <a class="ui blue basic button" href="/blogs/<%=blog._id%>">Read More</a>
+        </div>
+    <% }); %>
+</div>
+
+
+<% include ./partials/footer %>
